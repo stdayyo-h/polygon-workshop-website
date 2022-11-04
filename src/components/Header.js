@@ -1,7 +1,7 @@
 import React from 'react'
 import poly from '../assets/images/poly.png'
-import ilogo from '../assets/images/istelogo.png'
-import clogo from '../assets/images/codinclublogo.png'
+import ilogo from '../assets/images/ilogo.png'
+import clogo from '../assets/images/cclogo.png'
 import plogo from '../assets/images/logo.png'
 import globe from '../assets/images/globe.png'
 
@@ -24,10 +24,10 @@ const Header = ({ id }) => {
         <div className='overflow-hidden w-full bg-black h-screen  flex flex-col md:flex-row'>
             <div className='w-full md:w-1/2 h-full flex flex-col '>
                 <div className='ml-6 h-20  flex flex-row justify-between md:justify-start'>
-                    <img src={ilogo} alt="" className='w-10 h-10 md:w-14 md:h-14   overflow-x-hidden  mt-5 ' />
-                    <img src={clogo} alt="" className='w-20 md:24 md:h-16 h-12   overflow-x-hidden md:ml-5 mt-5 mr-6' />
+                    <img src={ilogo} alt="" className='w-24 h-10 md:h-10 md:w-32   overflow-x-hidden  mt-12  ' />
+                    <img src={clogo} alt="" className='w-24 h-10 md:h-10 md:w-32   overflow-x-hidden mt-12 ml-12 mr-4 ' />
                 </div>
-                <div className='h-fit w-fit p-10 overflow-hidden absolute top-10 right-2'>
+                <div className='h-fit w-fit p-10 overflow-hidden absolute top-14 right-2'>
                     <img src={poly} alt="" className='opacity-100 mt-3 md:opacity-0  ml-48 w-auto h-auto    overflow-hidden animate-spin-slows  ' />
                 </div>
 
