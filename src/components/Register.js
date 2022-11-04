@@ -5,7 +5,7 @@ import arrowhead from '../assets/images/arrowhead.png'
 const Register = () => {
     return (
         <div className='flex flex-col'>
-            <h1 className='ml-5 md:ml-20 mb-5 text-4xl font-bold underline text-left'>Book Your Spot</h1>
+            <h1 className='ml-5 md:ml-20 mb-5 text-4xl font-bold pt-24 text-left'>Book Your Spot</h1>
             <div className='overflow-hidden w-full flex flex-col md:flex-row md:justify-between md:items-start '>
 
 
@@ -16,9 +16,9 @@ const Register = () => {
                         </div>
                         <div className='flex flex-col items-center md:flex-row'>
                             <div className='md:text-3xl text-left mt-5'>
-                                <h1>1.Scan this QR Code</h1>
-                                <h1>2.Complete the Payment</h1>
-                                <h1>3.Fill this form</h1>
+                                <h1>1. Scan this QR Code</h1>
+                                <h1>2. Complete the Payment</h1>
+                                <h1>3. Fill this form</h1>
 
                             </div>
                             <div className='opacity-0 md:opacity-100 w-fit h-fit ml-5 mt-1 overflow-hidden flex flex-row md:animate-pulse'>

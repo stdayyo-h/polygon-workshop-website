@@ -7,7 +7,7 @@ import Hero from '../components/Hero'
 import Register from '../components/Register'
 const Home = () => {
     return (
-        <div className='w-full max-w-screen'>
+        <div className='overflow-hidden max-w-screen '>
             <Header id={"comp_id"} />
 
             <div id='comp_id'>

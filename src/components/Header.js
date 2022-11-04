@@ -21,7 +21,7 @@ const Header = ({ id }) => {
     };
 
     return (
-        <div className='overflow-hidden w-full bg-black h-screen  flex flex-col md:flex-row'>
+        <div className='overflow-hidden w-full bg-gray-900 h-screen  flex flex-col md:flex-row'>
             <div className='w-full md:w-1/2 h-full flex flex-col '>
                 <div className='ml-6 h-20  flex flex-row justify-between md:justify-start'>
                     <img src={ilogo} alt="" className='w-24 h-10 md:h-10 md:w-32   overflow-x-hidden  mt-12  ' />

@@ -11,7 +11,7 @@ const Features = () => {
         },
     };
     return (
-        <div className='w-full h-96  flex flex-row justify-between items-start relative'>
+        <div className='w-screen h-96  flex flex-row justify-between items-start relative bg-gray-900'>
             <div className='w-1/2 pt-20 h-full text-4xl font-bold text-violet-700'>
                 Amazing Goodies Awaiting You !!!
             </div>
