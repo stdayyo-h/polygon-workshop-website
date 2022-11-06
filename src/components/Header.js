@@ -21,8 +21,9 @@ const Header = ({ id }) => {
     };
 
     return (
-        <div className='overflow-hidden w-full bg-gray-900 h-screen  flex flex-col md:flex-row'>
+        <div className='overflow-hidden w-full h-screen  flex flex-col md:flex-row bg-gradient-to-b from-topmost to-top'>
             <div className='w-full md:w-1/2 h-full flex flex-col '>
+                
                 <div className='ml-6 h-20  flex flex-row justify-between md:justify-start'>
                     <img src={ilogo} alt="" className='w-24 h-10 md:h-10 md:w-32   overflow-x-hidden  mt-12  ' />
                     <img src={clogo} alt="" className='w-24 h-10 md:h-10 md:w-32   overflow-x-hidden mt-12 ml-12 mr-4 ' />
@@ -34,7 +35,7 @@ const Header = ({ id }) => {
                 <div className='h-4/6 ml-8 mt-40 md:ml-20 md:mt-10 flex flex-col justify-center'>
                     <div className='mt-10 flex flex-row items-center '>
                         <img src={plogo} alt="" className='w-8 h-8 md:w-12 md:h-12   overflow-x-hidden  ' />
-                        <h1 className='ml-3 mb-1 text-white font-medium text-xl'>
+                        <h1 className='ml-3 mb-1 text-yellow-200 font-medium text-xl'>
                             polygon / guild
                         </h1>
                     </div>
@@ -46,14 +47,14 @@ const Header = ({ id }) => {
 
                 </div>
             </div>
-            <div className='scale-150  md:visible'>
+            <div className='scale-125  md:visible'>
                 <img src={globe} alt="" className=' opacity-0 md:opacity-100 md:visible mt-40 ml-48 w-auto h-auto    overflow-hidden animate-spin-slow  ' />
 
 
             </div>
 
 
-            <div className="flex   absolute items-bottom justify-center w-full bottom-20 md:bottom-10">
+            {/* <div className="flex   absolute items-bottom justify-center w-full bottom-20 md:bottom-10">
                 <div
                     onClick={() => { if (id) document.getElementById(id).scrollIntoView({ behavior: "smooth" }) }}
                 >
@@ -67,8 +68,9 @@ const Header = ({ id }) => {
                         isPaused={false}
                     />
                 </div>
-            </div>
+            </div> */}
         </div>
+        
     )
 }
 

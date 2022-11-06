@@ -4,7 +4,7 @@ import arrowhead from '../assets/images/arrowhead.png'
 
 const Register = () => {
     return (
-        <div className='flex flex-col'>
+        <div className='flex flex-col  bg-middle text-white'>
             <h1 className='ml-5 md:ml-20 mb-5 text-4xl font-bold pt-24 text-left'>Book Your Spot</h1>
             <div className='overflow-hidden w-full flex flex-col md:flex-row md:justify-between md:items-start '>
 
@@ -76,7 +76,7 @@ const Register = () => {
 
                                 <div className='mt-7 flex flex-row '>
                                     <button type="submit" className='text-black font-semibold hover:border-db-text-ph hover:text-white bg-violet-200 hover:bg-violet-700 rounded-md px-3 md:py-1 mr-5'>Submit</button>
-                                    <button type="reset" onClick={Formik.resetForm} className='  hover:border-gray-400   bg-gray-200  rounded-md px-3 md:py-1 '>Reset</button>
+                                    <button type="reset" onClick={Formik.resetForm} className='  hover:border-gray-400   bg-gray-200  rounded-md px-3 md:py-1 text-black '>Reset</button>
                                 </div>
 
                             </Form>
