@@ -173,93 +173,93 @@ const Register = () => {
 
     return (
 
-        <div className='flex flex-col  bg-middle text-white'>
-            <h1 className='ml-5 md:ml-20 mb-5 text-4xl font-bold pt-24 text-left'>Book Your Spot</h1>
-            <div className='overflow-hidden w-full flex flex-col md:flex-row md:justify-between md:items-start '>
+         <div className='flex flex-col  bg-middle text-white'>
+             <h1 className='ml-5 md:ml-20 mb-5 text-4xl font-bold pt-24 text-left'>Book Your Spot</h1>
+             <div className='overflow-hidden w-full flex flex-col md:flex-row md:justify-between md:items-start '>
 
 
-                <div className='md:w-1/2 md:ml-36 '>
-                    <div className='flex flex-col items-center md:items-start md:pt-40'>
-                        <div className='w-52 h-52 bg-black'>
+                 <div className='md:w-1/2 md:ml-36 '>
+                     <div className='flex flex-col items-center md:items-start md:pt-40'>
+                         <div className='w-52 h-52 bg-black'>
 
-                        </div>
-                        <div className='flex flex-col items-center md:flex-row'>
-                            <div className='md:text-3xl text-left mt-5'>
+                         </div>
+                         <div className='flex flex-col items-center md:flex-row'>
+                             <div className='md:text-3xl text-left mt-5'>
                                 <h1>1. Scan this QR Code</h1>
-                                <h1>2. Complete the Payment</h1>
-                                <h1>3. Fill this form</h1>
+                                 <h1>2. Complete the Payment</h1>
+                                  <h1>3. Fill this form</h1>
 
-                            </div>
-                            <div className='opacity-0 md:opacity-100 w-fit h-fit ml-5 mt-1 overflow-hidden flex flex-row md:animate-pulse'>
-                                <img src={arrowhead} alt="" className='opacity-50  w-32 h-32    overflow-hidden   ' />
-                                <img src={arrowhead} alt="" className='-ml-10 opacity-50  w-32 h-32    overflow-hidden   ' />
-                            </div>
-                        </div>
+                             </div>
+                             <div className='opacity-0 md:opacity-100 w-fit h-fit ml-5 mt-1 overflow-hidden flex flex-row md:animate-pulse'>
+                                 <img src={arrowhead} alt="" className='opacity-50  w-32 h-32    overflow-hidden   ' />
+                                 <img src={arrowhead} alt="" className='-ml-10 opacity-50  w-32 h-32    overflow-hidden   ' />
+                             </div>
+                         </div>
                         <div className='text-left -mt-20 md:mt-20'>
                             * For Any Queries , contact :
-                            <a href='#'>+91 9188532851</a>
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="fade-left" className='md:w-1/3   w-fit px-10   shadow-xl rounded-xl border-2 border-violet-300  md:mr-60 py-5'>
-                    <h3 className='text-center  text-xl text-db-text-h mt-3  md:text-2xl'>Registration Form</h3>
-                    <Formik
-                        validationSchema={validationSchema}
-                        initialValues={{
-                            name: "",
-                            email: "",
-                            phone_number: "",
-                            college_name: "",
-                            transaction_id: "",
-                            image: null,
-                        }}
-                        onSubmit={handleSubmit}
-                    >
-                        {({ values, setFieldValue }) => (
-                            <Form>
-                                <label>Name:</label>
-                                <Field className=' bg-transparent outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="name" type="text" />
-                                <KErrorMessage name="name" />
-                                <br /> <br />
-                                <label>Phone:</label>
-                                <Field className=' bg-transparent outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="phone_number" type="number" />
+                             <a href='#'>+91 9188532851</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div data-aos="fade-left" className='md:w-1/3   w-fit px-10   shadow-xl rounded-xl border-2 border-violet-300  md:mr-60 py-5'>
+                     <h3 className='text-center  text-xl text-db-text-h mt-3  md:text-2xl'>Registration Form</h3>
+                     <Formik
+                         validationSchema={validationSchema}
+                         initialValues={{
+                             name: "",
+                             email: "",
+                             phone_number: "",
+                             college_name: "",
+                             transaction_id: "",
+                             image: null,
+                         }}
+                         onSubmit={handleSubmit}
+                     >
+                         {({ values, setFieldValue }) => (
+                             <Form>
+                                 <label>Name:</label>
+                                 <Field className=' bg-transparent outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="name" type="text" />
+                                 <KErrorMessage name="name" />
+                                 <br /> <br />
+                               <label>Phone:</label>
+                                 <Field className=' bg-transparent outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="phone_number" type="number" />
                                 <KErrorMessage name="phone" />
-                                <br /> <br />
-                                <label>Email:</label>
-                                <Field className=' bg-transparent outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="email" type="email" />
-                                <KErrorMessage name="email" />
-                                <br /> <br />
+                                 <br /> <br />
+                                 <label>Email:</label>
+                                 <Field className=' bg-transparent outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="email" type="email" />
+                                 <KErrorMessage name="email" />
+                                 <br /> <br />
 
                                 <label>College Name:</label>
-                                <Field className=' bg-transparent outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="college_name" type="text" />
-                                <KErrorMessage name="college_name" />
-                                <br /> <br />
-                                <label >Transaction ID:</label>
-                                <Field className=' bg-transparent outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="transaction_id" type="text" />
-                                <KErrorMessage name="transaction_id" />
-                                <br /> <br />
+                                 <Field className=' bg-transparent outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="college_name" type="text" />
+                                 <KErrorMessage name="college_name" />
+                                 <br /> <br />
+                                 <label >Transaction ID:</label>
+                                 <Field className=' bg-transparent outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="transaction_id" type="text" />
+                                 <KErrorMessage name="transaction_id" />
+                                 <br /> <br />
 
 
 
 
-                                <h3 className='mt-3 font-medium'>Screenshot of the payment</h3>
+                                 <h3 className='mt-3 font-medium'>Screenshot of the payment</h3>
 
-                                <input id="image" type="file" onChange={(event) => {
-                                    setFieldValue("file", event.currentTarget.files[0]);
-                                }} />
+                                 <input id="image" type="file" onChange={(event) => {
+                                     setFieldValue("file", event.currentTarget.files[0]);
+                               }} />
                                 {/* <Field id="image" name="image" className='mt-2' type="file" /> */}
 
-                                <div className='mt-7 flex flex-row '>
-                                    <button type="submit" className='text-black font-semibold hover:border-db-text-ph hover:text-white bg-violet-200 hover:bg-violet-700 rounded-md px-3 md:py-1 mr-5'>Submit</button>
-                                    <button type="reset" onClick={Formik.resetForm} className='  hover:border-gray-400   bg-gray-200  rounded-md px-3 md:py-1 text-black '>Reset</button>
-                                </div>
-                            </Form>
-                        )}
-                    </Formik>
-                </div>
-            </div>
-        </div>
-    );
+                                 <div className='mt-7 flex flex-row '>
+                                     <button type="submit" className='text-black font-semibold hover:border-db-text-ph hover:text-white bg-violet-200 hover:bg-violet-700 rounded-md px-3 md:py-1 mr-5'>Submit</button>
+                                     <button type="reset" onClick={Formik.resetForm} className='  hover:border-gray-400   bg-gray-200  rounded-md px-3 md:py-1 text-black '>Reset</button>
+                                 </div>
+                             </Form>
+                         )}
+                     </Formik>
+                 </div>
+             </div>
+         </div>
+     );
 };
 
 export default Register;
