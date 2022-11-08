@@ -3,8 +3,8 @@ import { ErrorMessage } from "formik";
 
 const KErrorMessage = ({ name }) => {
     return (
-        <div style={{ color: "red" }}>
-            <br />
+        <div className="text-violet-300">
+
             <ErrorMessage name={name} />
         </div>
     );

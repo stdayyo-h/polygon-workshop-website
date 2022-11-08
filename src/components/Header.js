@@ -23,16 +23,16 @@ const Header = ({ id }) => {
     return (
         <div className='overflow-hidden w-full h-screen  flex flex-col md:flex-row bg-gradient-to-b from-topmost to-top'>
             <div className='w-full md:w-1/2 h-full flex flex-col '>
-                
-                <div className='ml-6 h-20  flex flex-row justify-between md:justify-start'>
+
+                <div className=' h-20 px-5  flex flex-row justify-between md:justify-start'>
                     <img src={ilogo} alt="" className='w-24 h-10 md:h-10 md:w-32   overflow-x-hidden  mt-12  ' />
-                    <img src={clogo} alt="" className='w-24 h-10 md:h-10 md:w-32   overflow-x-hidden mt-12 ml-12 mr-4 ' />
+                    <img src={clogo} alt="" className='w-24 h-10 md:h-10 md:w-32   overflow-x-hidden mt-12  ' />
                 </div>
-                <div className='h-fit w-fit p-10 overflow-hidden absolute top-14 right-2'>
+                <div className='h-fit w-fit p-14 mt-10 overflow-hidden absolute top-14 right-2'>
                     <img src={poly} alt="" className='opacity-100 mt-3 md:opacity-0  ml-48 w-auto h-auto    overflow-hidden animate-spin-slows  ' />
                 </div>
 
-                <div className='h-4/6 ml-8 mt-40 md:ml-20 md:mt-10 flex flex-col justify-center'>
+                <div className='h-4/6  mt-64 ml-10 md:ml-20 md:mt-10 flex flex-col justify-center'>
                     <div className='mt-10 flex flex-row items-center '>
                         <img src={plogo} alt="" className='w-8 h-8 md:w-12 md:h-12   overflow-x-hidden  ' />
                         <h1 className='ml-3 mb-1 text-yellow-200 font-medium text-xl'>
@@ -54,7 +54,7 @@ const Header = ({ id }) => {
             </div>
 
 
-            {/* <div className="flex   absolute items-bottom justify-center w-full bottom-20 md:bottom-10">
+            <div className="flex   absolute items-bottom justify-center w-full bottom-20 md:bottom-10">
                 <div
                     onClick={() => { if (id) document.getElementById(id).scrollIntoView({ behavior: "smooth" }) }}
                 >
@@ -68,9 +68,9 @@ const Header = ({ id }) => {
                         isPaused={false}
                     />
                 </div>
-            </div> */}
+            </div>
         </div>
-        
+
     )
 }
 
