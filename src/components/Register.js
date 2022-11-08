@@ -153,9 +153,9 @@ const Register = () => {
     const handleSubmit = async (values) => {
 
         // setLoading(true);
-        console.log(values)
+        // console.log(values)
         const response = await form(values);
-        console.log(response)
+        // console.log(response)
         // setLoading(false);
 
         if (response.status === 200) {
