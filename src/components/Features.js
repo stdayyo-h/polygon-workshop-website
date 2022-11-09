@@ -17,11 +17,18 @@ const Features = () => {
     };
     return (
         <div className='w-screen h-96  flex flex-row justify-between items-start relative bg-gradient-to-b from-top to-middle'>
-            <div className='w-1/2 pt-20 h-full text-4xl font-bold text-white'>
-                Amazing Goodies Awaiting You !!!
+            <div>
+                <div className='pr-10 pt-20 h-full text-4xl font-bold text-white'>
+                    Win exciting goodies!
+
+                </div>
+                <div>
+                    <img src='./assets/images/goodies.png'></img>
+                </div>
             </div>
-            <div className="flex   absolute bottom-20 justify-end w-full ">
-                <div className='md:mr-40  -mr-32  '
+            
+            <div className="flex  absolute bottom-20 justify-end w-full ">
+                {/* <div className='md:mr-40  -mr-32  '
                 // onClick={() => { if (id) document.getElementById(id).scrollIntoView({ behavior: "smooth" }) }}
                 >
 
@@ -34,7 +41,8 @@ const Features = () => {
                         isPaused={false}
 
                     />
-                </div>
+                </div> */}
+                {/* <img src='./assets/images/goodies.png'></img> */}
             </div>
         </div>
     )
