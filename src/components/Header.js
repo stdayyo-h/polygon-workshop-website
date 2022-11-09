@@ -9,7 +9,7 @@ import Lottie from "react-lottie";
 import * as animationData from "../assets/lotties/scroll.json";
 
 
-const Header = ({ id }) => {
+const Header = ({ id1, id2 }) => {
 
     const defaultOptions = {
         loop: true,
@@ -41,8 +41,16 @@ const Header = ({ id }) => {
                     </div>
                     <div data-aos-duration="200" data-aos="fade-up"
                         className='mt-4 text- md:mt-10 flex flex-col items-start text-white'>
-                        <h1 className='text-4xl md:text-8xl font-black'>WEB 3.0</h1>
-                        <h1 className='text-4xl md:text-8xl font-black'>WORKSHOP</h1>
+                        <h1 className='text-4xl md:text-8xl font-black'>0XCITO</h1>
+                        <h1 className='text-4xl md:text-4xl font-semibold italic'>THE FUTURE IS HERE !!</h1>
+                        {/* <h1 className='text-4xl md:text-5xl font-black'>WEB 3.0 </h1>
+                        <h1 className='text-4xl md:text-5xl font-black'>WORKSHOP </h1> */}
+                        <button className='bg-violet-800 rounded-md mt-10  px-2 py-1'
+                            onClick={() => { if (id2 !== null) document.getElementById(id2).scrollIntoView({ behavior: "smooth" }) }}
+                        >
+
+                            Register Now
+                        </button>
                     </div>
 
                 </div>
@@ -56,7 +64,7 @@ const Header = ({ id }) => {
 
             <div className="flex   absolute items-bottom justify-center w-full bottom-20 md:bottom-10">
                 <div
-                    onClick={() => { if (id) document.getElementById(id).scrollIntoView({ behavior: "smooth" }) }}
+                    onClick={() => { if (id1) document.getElementById(id1).scrollIntoView({ behavior: "smooth" }) }}
                 >
 
                     <Lottie

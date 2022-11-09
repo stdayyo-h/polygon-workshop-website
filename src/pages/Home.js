@@ -9,12 +9,13 @@ import Register from '../components/Register'
 const Home = () => {
     return (
         <div className='overflow-hidden max-w-screen '>
-            <Header id={"comp_id"} />
+            <Header id1={"comp_id"} id2={"reg_id"} />
 
             <div id='comp_id'>
                 <About />
             </div>
             <Features />
+
             <Register />
             <Footer />
         </div>

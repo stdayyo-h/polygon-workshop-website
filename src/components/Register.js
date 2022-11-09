@@ -1,5 +1,6 @@
 import { PopUpContext } from '../context/PopUpContext';
 import arrowhead from '../assets/images/arrowhead.png'
+import qr from '../assets/images/qr.jpeg'
 import { form } from '../apis/form';
 // import LocalLoader from './LocalLoader';
 
@@ -34,16 +35,19 @@ const Register = () => {
     const [cOpen, setCOpen] = useState(false);
     const inst = [
         {
-            desc: "hahahaha"
+            desc: `
+             A registration fee of Rs.150 required for attending the session.`
         },
         {
-            desc: "hahahaha"
+            desc: ` Participants are required to bring their own Laptops for the session. ( Minimum 4GB __ required)
+            `
         },
         {
-            desc: "hahahaha"
+            desc: ` Refreshments will be provided.
+            `
         },
         {
-            desc: "hahahaha"
+            desc: ` Extra payment need to be done for food, if needed.`
         },
     ]
 
@@ -51,25 +55,21 @@ const Register = () => {
 
     const handleSubmit = async (values) => {
 
-<<<<<<< HEAD
         setLoading(true);
         // console.log(values)
         const response = await form(values);
-        // console.log(response)
+        console.log(response)
         setLoading(false);
-=======
-        // setLoading(true);
-        // console.log(values)
-        const response = await form(values);
-        // console.log(response)
-        // setLoading(false);
->>>>>>> 42f31b69d2cd7fa8227e1c63ef8629b954c72184
 
+        // setPopUpContent({ heading: "NOTICE", description: "The email has been sent!" });
         if (response.status === 200) {
-            setPopUpContent({ heading: "NOTICE", description: "The email has been sent!" });
+            setPopUpContent({ heading: "NOTICE", description: "Registration Successfull !" });
 
-        } else {
-            setPopUpContent({ heading: "NOTICE", description: "Unable to send email!" });
+        } else if (response.status === 409) {
+            setPopUpContent({ heading: "NOTICE", description: "Registration with this Email already exists !!!" });
+        }
+        else {
+            setPopUpContent({ heading: "NOTICE", description: "Registration Unsuccessfull !!!" });
         }
         setPopUp(true);
 
@@ -77,7 +77,7 @@ const Register = () => {
 
     return (
 
-        <div className='flex flex-col  bg-middle text-white'>
+        <div id={"reg_id"} className='flex flex-col  bg-middle text-white'>
             <h1 className='ml-5 md:ml-20 mb-5 text-4xl font-bold pt-24 text-center md:text-left'>Book Your Spot</h1>
             <div className='overflow-hidden w-full flex flex-col md:flex-row md:justify-between md:items-start '>
 
@@ -86,16 +86,21 @@ const Register = () => {
                     <div className='flex flex-col items-center md:items-start md:pt-40'>
                         <div className='mt-10 w-full flex flex-col md:flex-row justify-center md:justify-between items-center '>
                             <div className='mt-10 w-full flex flex-col items-center  md:flex-row   '>
-                                <div className=' w-52 h-52 bg-black '>
+                                {/* <div className=' w-52 h-52 bg-black '>
 
-                                </div>
+                                </div> */}
+                                <img src={qr} className="w-52 h-52" />
                                 <div className='hidden md:block w-20 h-52 border-r-2  '>
 
                                 </div>
                             </div>
                             <div className='relative'>
-                                <div className='text-lg mt-10 font-bold md:absolute -right-20    '>
-                                    ashwinbinu2002@okicicic
+                                <div className='text-lg mt-5 md:mt-0 font-bold md:absolute -right-20    '>
+                                    <p>anandspidavoor@oksbi
+                                    </p>
+                                    <p>or</p>
+                                    <p>angathjr@okaxis
+                                    </p>
                                 </div>
                             </div>
 

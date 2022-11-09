@@ -13,11 +13,11 @@ export const PopUp = (props) => {
   }, [popUp]);
   return (
     <div
-      className={`fixed w-screen flex justify-center inset-x-0 bottom-5 z-[999] px-2 sm:px-0 ${popUp ? " block " : "hidden"}`}
+      className={`fixed w-screen flex justify-center inset-x-0 bottom-20 z-[999] px-2 sm:px-0 ${popUp ? " block " : "hidden"}`}
       disabled={!popUp}
     >
       <div className="relative min-w-[300px] bg-white shadow-xl rounded-full	shadow-xl">
-        <div className="">
+        <div className="z-[1000]">
           <div>
             {/* <h2 className="text-xl text-black font-semibold ">
               {popUpContent.heading}
