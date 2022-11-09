@@ -51,11 +51,19 @@ const Register = () => {
 
     const handleSubmit = async (values) => {
 
+<<<<<<< HEAD
         setLoading(true);
         // console.log(values)
         const response = await form(values);
         // console.log(response)
         setLoading(false);
+=======
+        // setLoading(true);
+        // console.log(values)
+        const response = await form(values);
+        // console.log(response)
+        // setLoading(false);
+>>>>>>> 42f31b69d2cd7fa8227e1c63ef8629b954c72184
 
         if (response.status === 200) {
             setPopUpContent({ heading: "NOTICE", description: "The email has been sent!" });
