@@ -1,7 +1,7 @@
 import { PopUpContext } from '../context/PopUpContext';
 import arrowhead from '../assets/images/arrowhead.png'
 import { form } from '../apis/form';
-import LocalLoader from './LocalLoader';
+// import LocalLoader from './LocalLoader';
 
 // export default Register
 
@@ -177,12 +177,7 @@ const Register = () => {
                                     </div>
                                     <div className='mt-7 flex flex-row '>
                                         <button disabled={loading ? true : false} type="submit" className='text-black font-semibold hover:border-db-text-ph hover:text-white bg-violet-200 hover:bg-violet-700 rounded-md px-3 md:py-1 mr-5'>
-                                            {loading ?
-                                                <LocalLoader small />
-                                                :
-
-                                                "Submit"
-                                            }
+                                            Submit
                                         </button>
                                         <button type="reset" onClick={Formik.resetForm} className='  hover:border-gray-400   bg-gray-200  rounded-md px-3 md:py-1 text-black '>Reset</button>
                                     </div>
