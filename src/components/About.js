@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div className=' w-full h-96 bg-top'>
             <div className='divide-y divide-gray-600 ml-5 md:ml-20 pt-24 md:w-1/2'>
-                <h1 data-aos="fade-in" className='text-left text-4xl font-bold text-white uppercase text-5xl'>
+                <h1 data-aos="fade-in" className='text-center md:text-left text-4xl font-bold text-white uppercase '>
                     About
                 </h1>
                 <p data-aos-duration="200" data-aos="fade-in" className='mt-5 pt-5 text-left text-lg text-white'>

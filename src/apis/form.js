@@ -5,7 +5,7 @@ export async function form(data) {
     try {
         const response = await axios({
             method: 'post',
-            url: 'https://oxcite-backend.up.railway.app/register/',
+            url: 'https://backend.web3tkmce.tech/register',
             headers: { "Content-Type": "multipart/form-data" },
             data
 
