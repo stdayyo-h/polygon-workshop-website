@@ -17,12 +17,8 @@ const Home = () => {
                     </div>
                     <Features />
             </div>
-<<<<<<< HEAD
-            
-=======
-            <Features />
+            {/* <Features /> */}
 
->>>>>>> 265cd8c4287d6b9d932438106c0e60e1aa4b0dc3
             <Register />
             <Footer />
         </div>

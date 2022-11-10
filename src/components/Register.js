@@ -78,17 +78,22 @@ const Register = () => {
     return (
 
         <div id={"reg_id"} className='flex flex-col  bg-middle text-white'>
-            <h1 className='ml-5 md:ml-20 mb-5 text-4xl font-bold pt-24 text-center md:text-left'>Book Your Spot</h1>
+            <h1 className='ml-5 md:ml-20  text-4xl font-bold pt-24 text-center md:text-left font-font1'>Book Your Spot</h1>
+            <h2 className='ml-5 md:ml-20  text-xl text-yellow-200 pt-2 text-center md:text-left italic'>Limited seats, hurry!</h2>
+            
             <div className='overflow-hidden w-full flex flex-col md:flex-row md:justify-between md:items-start '>
 
-
+            
                 <div className='md:w-1/2 md:ml-36 '>
+                    
                     <div className='flex flex-col items-center md:items-start md:pt-40'>
+                        
                         <div className='mt-10 w-full flex flex-col md:flex-row justify-center md:justify-between items-center '>
-                            <div className='mt-10 w-full flex flex-col items-center  md:flex-row   '>
+                            <div className='mt-5 w-full flex flex-col items-center  md:flex-row   '>
                                 {/* <div className=' w-52 h-52 bg-black '>
 
                                 </div> */}
+                                
                                 <img src={qr} className="w-52 h-52" />
                                 <div className='hidden md:block w-20 h-52 border-r-2  '>
 

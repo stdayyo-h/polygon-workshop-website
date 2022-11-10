@@ -24,7 +24,7 @@ const Header = ({ id1, id2 }) => {
         <div className='overflow-hidden w-full h-screen  flex flex-col md:flex-row bg-gradient-to-b from-topmost to-top'>
             <div className='w-full md:w-1/2 h-full flex flex-col '>
 
-                <div className=' h-20 px-5  flex flex-row justify-between md:justify-start'>
+                <div className=' h-20 px-6 space-x-12  flex flex-row justify-between md:justify-start'>
                     <img src={ilogo} alt="" className='w-24 h-10 md:h-10 md:w-32   overflow-x-hidden  mt-12  ' />
                     <img src={clogo} alt="" className='w-24 h-10 md:h-10 md:w-32   overflow-x-hidden mt-12  ' />
                 </div>
@@ -41,8 +41,8 @@ const Header = ({ id1, id2 }) => {
                     </div>
                     <div data-aos-duration="200" data-aos="fade-up"
                         className='mt-4 text- md:mt-10 flex flex-col items-start text-white'>
-                        <h1 className='text-4xl md:text-8xl font-black'>0XCITO</h1>
-                        <h1 className='text-4xl md:text-4xl font-semibold italic'>THE FUTURE IS HERE !!</h1>
+                        <h1 className='text-4xl md:text-8xl font-black font-font1'><span className='text-yellow-200'>0</span>XCITE</h1>
+                        <h1 className='text-4xl md:text-4xl font-semibold pt-2 '> The future is here.</h1>
                         {/* <h1 className='text-4xl md:text-5xl font-black'>WEB 3.0 </h1>
                         <h1 className='text-4xl md:text-5xl font-black'>WORKSHOP </h1> */}
                         <button className='bg-violet-800 rounded-md mt-10  px-2 py-1'
