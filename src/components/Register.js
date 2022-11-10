@@ -111,10 +111,10 @@ const Register = () => {
 
                         </div>
                         <div className='flex flex-col items-center md:flex-row'>
-                            <div className='md:text-3xl text-left mt-5 flex flex-col items-center justify-center'>
-                                <h1>Complete the Payment Using this QR Code or UPI ID </h1>
+                            <div className='md:text-xl text-left mt-5 flex flex-col items-center justify-center'>
+                                <h1>Complete the Payment Using this QR Code or UPI ID and Fill the form </h1>
                                 {/* <h1>2. Complete the Payment</h1> */}
-                                <h1>And Fill the form below</h1>
+                                <h1></h1>
 
                             </div>
                             <div className='opacity-0 md:opacity-100 w-fit h-fit ml-5 mt-1 overflow-hidden flex flex-row md:animate-pulse'>
@@ -122,10 +122,10 @@ const Register = () => {
                                 <img src={arrowhead} alt="" className='-ml-10 opacity-50  w-32 h-32    overflow-hidden   ' />
                             </div>
                         </div>
-                        <div className='text-left -mt-20 md:mt-20'>
+                        {/* <div className='text-left -mt-20 md:mt-20'>
                             * For Any Queries , contact :
                             <a href='#'>+91 9188532851</a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className='mt-10  flex flex-col items-center md:items-end w-full'>
@@ -138,8 +138,8 @@ const Register = () => {
                                 email: "",
                                 mobile_number: "",
                                 college_name: "",
-                                transaction_id: "",
-                                image: "",
+                                // transaction_id: "",
+                                // image: "",
                             }}
                             onSubmit={handleSubmit}
                         >
