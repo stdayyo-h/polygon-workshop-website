@@ -195,17 +195,18 @@ const Register = () => {
             </div>
             <div className='flex flex-col items-center justify-center   w-full px-10   my-10  ' >
 
-                <button
-                    // onClick={(e) => {
-                    //     setCOpen(!cOpen);
-                    // }}
-                    className={`text-xl 
+
+                {!cOpen && <div data-aos="fade-bottom" className={`flex flex-col ${!cOpen ? " border-2 border-violet-300 " : " border-0"} w-fit px-10 rounded-xl  pb-5 md:mt-10`}>
+                    <p
+                        // onClick={(e) => {
+                        //     setCOpen(!cOpen);
+                        // }}
+                        className={`text-xl 
                     
-                     px-4 mt-10 mb-2   mx-10 text-white  capitalize w-fit rounded-md shadow-md font-bold text-left`}
-                >
-                    Instructions
-                </button>
-                {!cOpen && <div data-aos="fade-bottom" className={`flex flex-col ${!cOpen ? " border-2 border-violet-300 " : " border-0"} w-fit px-10 rounded-xl  `}>
+                      mt-6 mb-2 px-4 text-white  capitalize rounded-md shadow-md font-bold text-center w-full`}
+                    >
+                        Instructions
+                    </p>
                     {!cOpen && inst.map((e) => (
                         <div className="p-3 text-sm ">
                             <div className="flex flex-row  p-1 rounded-md ">
