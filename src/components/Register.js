@@ -38,7 +38,7 @@ const Register = () => {
     const inst = [
         
         {
-            desc: ` It will be a one-day long session.
+            desc: ` It will be a one-day long  free session.
             `
         },
         {
@@ -62,7 +62,8 @@ const Register = () => {
 
         // setPopUpContent({ heading: "NOTICE", description: "The email has been sent!" });
         if (response.status === 200) {
-            setPopUpContent({ heading: "NOTICE", description: "Registration Successfull !" });
+            setPopUpContent({ heading: "NOTICE", description: "Registration Successfull ! " });
+            
 
         } else if (response.status === 409) {
             setPopUpContent({ heading: "NOTICE", description: "Registration with this Email already exists !!!" });

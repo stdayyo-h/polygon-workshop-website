@@ -43,7 +43,7 @@ const Header = ({ id1, id2 }) => {
                         className='mt-4 text- md:mt-10 flex flex-col items-start text-white'>
                         <h1 className='text-4xl md:text-8xl font-black font-font1'><span className='text-yellow-200'>0</span>XCITE</h1>
                         <h1 className='text-4xl md:text-4xl font-semibold pt-2 '> The future is here.</h1>
-                        <h2 className='text-4xl md:text-2xl font-semibold pt-6 '>Mark your calenders <span className='text-yellow-200 text-4xl'>Nov 19</span></h2>
+                        <h2 className='text-xl lg:text-2xl font-semibold pt-6 '>Mark your calenders <span className='text-yellow-200 text-4xl'>Nov 19</span></h2>
                         {/* <h1 className='text-4xl md:text-5xl font-black'>WEB 3.0 </h1>
                         <h1 className='text-4xl md:text-5xl font-black'>WORKSHOP </h1> */}
                         <button className='bg-violet-800 rounded-md mt-10  px-2 py-1'
