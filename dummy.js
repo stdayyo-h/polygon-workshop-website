@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from "@emotion/styled";
-import axios from "axios"; 
+import axios from "axios";
 import Header from "../../components/Header";
 const Container = styled.div`
   margin-top: 150px;
@@ -9,34 +9,33 @@ class SubmitForm extends Component {
   state = {
     name: '',
   };
-/* This is where the magic happens 
-*/
-handleSubmit = event => {
+  /* This is where the magic happens 
+  */
+  handleSubmit = event => {
     event.preventDefault();
     const user = {
       name: this.state.name
     }
     axios.post('https://jsonplaceholder.typicode.com/users', { user })
-      .then(res=>{
-        console.log(res);
-        console.log(res.data);
+      .then(res => {
+
         window.location = "/retrieve" //This line of code will redirect you once the submission is succeed
       })
   }
-handleChange = event =>{
-    this.setState({ name: event.target.value});
+  handleChange = event => {
+    this.setState({ name: event.target.value });
   }
-render() {
+  render() {
     return (
       <Container>
-        <Header/>
-        <form onSubmit = { this.handleSubmit }>
+        <Header />
+        <form onSubmit={this.handleSubmit}>
           <label> Person Name:
-            <input type = "text" name = "name" onChange= {this.handleChange}/>
+            <input type="text" name="name" onChange={this.handleChange} />
           </label>
-          <button type = "submit"> Add </button>
+          <button type="submit"> Add </button>
         </form>
-    </Container>
+      </Container>
     );
   }
 }

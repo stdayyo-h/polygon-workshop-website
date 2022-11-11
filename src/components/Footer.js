@@ -15,11 +15,13 @@ const Footer = () => {
             </div> */}
             <div className='text-left ml-2 mb-5 divide-y'>
                 <p className=''>Contact Us</p>
-                <div>
-                
-                <p>Muhammed: +91 85901 10324</p>
+                <div className='flex flex-col'>
+
+                    <a href='http://wa.me/918590110324' target="_blank">Muhammed: +91 85901 10324</a>
+                    <a href='http://wa.me/919048426677' target="_blank">Angath: +91 9048426677</a>
+
                 </div>
-                
+
             </div>
 
 
