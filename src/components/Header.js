@@ -25,7 +25,7 @@ const Header = ({ id1, id2 }) => {
             <div className='w-full md:w-1/2 h-full flex flex-col '>
 
                 <div className=' h-20 px-6 space-x-12  flex flex-row justify-between md:justify-start'>
-                    <img src={ilogo} alt="" className='w-24 h-10 md:h-10 md:w-32   overflow-x-hidden  mt-12  ' />
+                    
                     <img src={clogo} alt="" className='w-24 h-10 md:h-10 md:w-32   overflow-x-hidden mt-12  ' />
                 </div>
                 <div className='h-fit w-fit p-14 mt-10 overflow-hidden absolute top-14 right-2'>

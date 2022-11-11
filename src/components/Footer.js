@@ -16,7 +16,7 @@ const Footer = () => {
             <div className='text-left ml-2 mb-5 divide-y'>
                 <p className=''>Contact Us</p>
                 <div>
-                <p>Vinay: +91 6282 425 687</p>
+                
                 <p>Muhammed: +91 85901 10324</p>
                 </div>
                 

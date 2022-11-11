@@ -34,12 +34,9 @@ const Register = () => {
 
     const [cOpen, setCOpen] = useState(false);
     const inst = [
+        
         {
-            desc: `
-             A registration fee of Rs.150 required for attending the session.`
-        },
-        {
-            desc: ` Participants are required to bring their own Laptops for the session. ( Minimum 4GB __ required)
+            desc: ` Participants are required to bring their own Laptops for the session.
             `
         },
         {
@@ -89,38 +86,13 @@ const Register = () => {
                     <div className='flex flex-col items-center md:items-start md:pt-40'>
                         
                         <div className='mt-10 w-full flex flex-col md:flex-row justify-center md:justify-between items-center '>
-                            <div className='mt-5 w-full flex flex-col items-center  md:flex-row   '>
-                                {/* <div className=' w-52 h-52 bg-black '>
-
-                                </div> */}
-                                
-                                <img src={qr} className="w-52 h-52" />
-                                <div className='hidden md:block w-20 h-52 border-r-2  '>
-
-                                </div>
-                            </div>
-                            <div className='relative'>
-                                <div className='text-lg mt-5 md:mt-0 font-bold md:absolute -right-20    '>
-                                    <p>anandspidavoor@oksbi
-                                    </p>
-                                    <p>or</p>
-                                    <p>angathjr@okaxis
-                                    </p>
-                                </div>
-                            </div>
+                           
+                            
 
                         </div>
                         <div className='flex flex-col items-center md:flex-row'>
-                            <div className='md:text-xl text-left mt-5 flex flex-col items-center justify-center'>
-                                <h1>Complete the Payment Using this QR Code or UPI ID and Fill the form </h1>
-                                {/* <h1>2. Complete the Payment</h1> */}
-                                <h1></h1>
-
-                            </div>
-                            <div className='opacity-0 md:opacity-100 w-fit h-fit ml-5 mt-1 overflow-hidden flex flex-row md:animate-pulse'>
-                                <img src={arrowhead} alt="" className='opacity-50  w-32 h-32    overflow-hidden   ' />
-                                <img src={arrowhead} alt="" className='-ml-10 opacity-50  w-32 h-32    overflow-hidden   ' />
-                            </div>
+                           
+                            
                         </div>
                         {/* <div className='text-left -mt-20 md:mt-20'>
                             * For Any Queries , contact :
@@ -167,32 +139,12 @@ const Register = () => {
                                         <Field className=' bg-transparent outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="college_name" type="text" />
                                         <KErrorMessage name="college_name" />
                                     </div>
-                                    <div className='flex flex-col mt-4 items-start'>
+                                    {/* <div className='flex flex-col mt-4 items-start'>
                                         <label className=' mt-2 font-medium'>Transaction ID:</label>
                                         <Field className=' bg-transparent outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="transaction_id" type="text" />
                                         <KErrorMessage name="transaction_id" />
-                                    </div>
-                                    <div className='flex flex-col mt-4 items-start'>
-
-
-
-
-                                        <h3 className='mt-3 font-medium'>Screenshot of the payment</h3>
-
-                                        {/* <form onSubmit={handleImgSubmit}>
-                                    <input type='file' name='file' onChange={handleFileChange}></input>
-                                    <button type='submit'>Add Screenshot</button>
-                                </form> */}
-                                        {/* <input type='file' name='file' onChange={handleFileChange}> */}
-
-                                        {/* </input> */}
-                                        {/* <button type='submit'>Add Screenshot</button> */}
-                                        <input id="image" name="image"
-                                            // value={values.image} 
-                                            type="file"
-                                            onChange={(event) => setFieldValue("image", event.currentTarget.files[0])} />
-                                        {/* <Field id="image" name="image" className='mt-2' type="file" /> */}
-                                    </div>
+                                    </div> */}
+                                    
                                     <div className='mt-7 flex flex-row '>
                                         <button disabled={loading ? true : false} type="submit" className='text-black font-semibold hover:border-db-text-ph hover:text-white bg-violet-200 hover:bg-violet-700 rounded-md px-3 md:py-1 mr-5'>
                                             Submit
