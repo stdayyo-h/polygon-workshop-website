@@ -26,7 +26,7 @@ const Header = ({ id1, id2 }) => {
 
                 <div className=' h-20 px-6 space-x-12  flex flex-row justify-between md:justify-start'>
                     
-                    <img src={clogo} alt="" className='w-24 h-10 md:h-10 md:w-32   overflow-x-hidden mt-12  ' />
+                    <img src={clogo} alt="" className='w-32 h-10 md:h-10 md:w-32   overflow-x-hidden mt-12  ' />
                 </div>
                 <div className='h-fit w-fit p-14 mt-10 overflow-hidden absolute top-14 right-2'>
                     <img src={poly} alt="" className='opacity-100 mt-3 md:opacity-0  ml-48 w-auto h-auto    overflow-hidden animate-spin-slows  ' />
@@ -62,7 +62,7 @@ const Header = ({ id1, id2 }) => {
             </div>
 
 
-            <div className="flex   absolute items-bottom justify-center w-full bottom-20 md:bottom-10">
+            <div className="flex hidden md:block absolute items-bottom justify-center w-full bottom-20 md:bottom-10">
                 <div
                     onClick={() => { if (id1) document.getElementById(id1).scrollIntoView({ behavior: "smooth" }) }}
                 >
