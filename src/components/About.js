@@ -24,7 +24,7 @@ const About = () => {
                     <p className="text-justify">
                         "Equip yourself with the  disruptive technology that  will define our next decade"
                         <br />
-                        Coding Club TKMCE presents you "0xcite", one day workshop that will bring the beginners into the Web3 domain. <br />Speakers from the Polygon Guild Kochi will tale you through..something
+                        Coding Club TKMCE presents you 0xcite, one day workshop that will bring the beginners into the Web3 domain.<br /> Speakers from the Polygon Guild Kochi will take you through the fascinating world of Web3.
 
                     </p>
                 </div>
@@ -33,7 +33,7 @@ const About = () => {
                 <div
                     data-aos="fade-up"
                     aos-delay="4000"
-                    className="bg-gradient-to-r my-8 text-left flex flex-col items-start from-purpleC to-purpleC2 shadow-lg w-full lg:w-5/12 p-10 rounded-xl hover:shadow-md hover:shadow-slate-200 "
+                    className="bg-gradient-to-r my-8 text-left flex flex-col items-start from-purpleC to-purpleC2 shadow-lg w-full lg:w-5/12 p-10 rounded-xl md:hover:shadow-md md:hover:shadow-slate-200 "
                 >
                     <h7 className="font-bold text-4xl mb-2 font-font1">Polygon Guild Kochi</h7>
                     <p className="text-justify">
@@ -48,7 +48,7 @@ const About = () => {
                 <div
                     data-aos="fade-up"
                     aos-delay="4000"
-                    className="bg-gradient-to-r text-left flex flex-col items-start from-purpleC to-purpleC2 shadow-lg w-full lg:w-5/12 p-10 rounded-xl hover:shadow-md hover:shadow-slate-200"
+                    className="bg-gradient-to-r text-left flex flex-col items-start from-purpleC to-purpleC2 shadow-lg w-full lg:w-5/12 p-10 rounded-xl md:hover:shadow-md md:hover:shadow-slate-200"
                 >
                     <h7 className="font-bold text-4xl mb-2 font-font1">Coding Club TKMCE</h7>
                     <p className="text-justify">

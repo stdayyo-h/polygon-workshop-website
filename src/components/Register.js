@@ -82,7 +82,7 @@ const Register = () => {
 
         <div id={"reg_id"} className='flex flex-col  bg-middle text-white'>
             <h1 className='ml-5 md:ml-20  text-4xl font-bold pt-24 text-center md:text-left font-font1'>Book Your Spot</h1>
-            <h2 className='ml-5 md:ml-20  text-xl text-yellow-200 pt-2 text-center md:text-left italic'>Limited seats, hurry!</h2>
+            <h2 className='ml-5 md:ml-20  text-xl text-violet-400 pt-2 text-center md:text-left italic'>Limited seats, hurry!</h2>
 
 
             <div className='overflow-hidden w-full  flex flex-col md:flex-row   '>
@@ -144,29 +144,29 @@ const Register = () => {
                                 <Form className='flex flex-col'>
                                     <div className='flex flex-col mt-4 items-start'>
                                         <label className=' mt-2 font-medium'>Name:</label>
-                                        <Field className=' bg-transparent outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="name" type="text" />
+                                        <Field className=' outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="name" type="text" />
                                         <KErrorMessage name="name" />
                                     </div>
                                     {/* <br /> <br /> */}
                                     <div className='flex flex-col mt-4 items-start'>
                                         <label className=' mt-2 font-medium'>Phone:</label>
-                                        <Field className=' bg-transparent outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="mobile_number" type="number" />
+                                        <Field className='  outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="mobile_number" type="number" />
                                         <KErrorMessage name="mobile_number" />
                                     </div>
                                     <div className='flex flex-col mt-4 items-start'>
                                         <label className=' mt-2 font-medium'>Email:</label>
-                                        <Field className=' bg-transparent outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="email" type="email" />
+                                        <Field className='  outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="email" type="email" />
                                         <KErrorMessage name="email" />
                                     </div>
                                     <div className='flex flex-col mt-4 items-start'>
 
                                         <label className=' mt-2 font-medium'>College Name:</label>
-                                        <Field className=' bg-transparent outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="college_name" type="text" />
+                                        <Field className=' outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="college_name" type="text" />
                                         <KErrorMessage name="college_name" />
                                     </div>
                                     {/* <div className='flex flex-col mt-4 items-start'>
                                         <label className=' mt-2 font-medium'>Transaction ID:</label>
-                                        <Field className=' bg-transparent outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="transaction_id" type="text" />
+                                        <Field className=' outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="transaction_id" type="text" />
                                         <KErrorMessage name="transaction_id" />
                                     </div> */}
 

@@ -34,7 +34,7 @@ const Header = ({ id1, id2 }) => {
                     <img src={poly} alt="" className='opacity-[0.6] mt-3 md:opacity-0  ml-48 w-auto h-auto    overflow-hidden animate-spin-slows  ' />
                 </div>
 
-                <div className='h-4/6 mt-36 ml-10 md:ml-20 md:mt-10 flex flex-col justify-center'>
+                <div className='h-4/6 mt-10 ml-10 md:ml-20 md:mt-10 flex flex-col justify-center'>
                     <div className='mt-10 flex flex-row items-center '>
                         {/* <img src={plogo} alt="" className='w-8 h-8 md:w-12 md:h-12   overflow-x-hidden  ' /> */}
                         <h1 className=' mb-1 text-purple-400 font-medium text-xl'>
@@ -48,7 +48,7 @@ const Header = ({ id1, id2 }) => {
                         <h2 className='text-xl lg:text-2xl font-semibold pt-6 uppercase font-font1'> <span className='text-purple-400 text-3xl md:text-4xl uppercase font-font1'>Nov 19</span></h2>
                         {/* <h1 className='text-4xl md:text-5xl font-black'>WEB 3.0 </h1>
                         <h1 className='text-4xl md:text-5xl font-black'>WORKSHOP </h1> */}
-                        <button className='bg-violet-800 hover:bg-violet-500 rounded-md mt-10  px-2 py-1'
+                        <button className='bg-[#6531a4] hover:bg-violet-500 font-semibold rounded-md mt-10  px-4 py-1 z-[30]'
                             onClick={() => { if (id2 !== null) document.getElementById(id2).scrollIntoView({ behavior: "smooth" }) }}
                         >
 
@@ -59,7 +59,7 @@ const Header = ({ id1, id2 }) => {
                 </div>
             </div>
             <div className='scale-125  md:visible z-[0]'>
-                <img src={globe} alt="" className=' opacity-0 md:opacity-100 md:visible mt-40 ml-48 w-auto h-auto    overflow-hidden animate-spin-slow  ' />
+                <img src={globe} alt="" className=' hidden md:block md:visible mt-40 ml-48 w-auto h-auto    overflow-hidden animate-spin-slow  ' />
 
 
             </div>
