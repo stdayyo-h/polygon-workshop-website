@@ -65,7 +65,7 @@ const Register = () => {
 
             // setPopUpContent({ heading: "NOTICE", description: "The email has been sent!" });
             if (response.status === 200) {
-                setPopUpContent({ heading: "NOTICE", description: "Registration Successfull ! " });
+                setPopUpContent({ heading: "NOTICE", description: "Form Accepted ,will get back to you soon" });
                 setLink(true);
 
 
