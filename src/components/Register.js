@@ -48,9 +48,7 @@ const Register = () => {
             desc: ` Participants are required to bring their own Laptops for the session.
             `
         },
-        {
-            desc: `Confirmation mail will be sent .`
-        },
+
         {
             desc: `More details will be provided later`
         },
@@ -113,8 +111,8 @@ const Register = () => {
 
                             </div>
                             {link &&
-                                <div className="hidden md:block border h-fit border-dashed hover:animate-pulse hover:text-green-200 hover:border-emerald-700 rounded-lg border-violet-300 w-fit text-white mt-16 p-3 text-md  ">
-
+                                <div className="hidden md:visible md:flex md:flex-row border h-fit border-dashed hover:animate-pulse hover:text-green-200 hover:border-emerald-700 rounded-lg border-violet-300 w-fit text-white mt-16 p-3 text-md  ">
+                                    <img src={wlogo} className="scale-75" />
                                     <a href='https://chat.whatsapp.com/F6SBt0dasEiKv1BPUPMhI0' target="_blank" className="font-medium">Now join this Whatsapp Group</a>
 
 
@@ -183,7 +181,9 @@ const Register = () => {
                                             </button>
                                             <button type="reset" onClick={Formik.resetForm} className='  hover:border-gray-400   bg-gray-200  rounded-md px-3 md:py-1 text-black '>Reset</button>
                                         </div>
+                                        <p className='text-left pt-10'><span className='text-red-400'>*</span>Your registration will be confirmed only when you recieve a confirmation mail.<br />It may take a while</p>
                                     </Form>
+
                                 )}
                             </Formik>
                         </div>
@@ -195,7 +195,7 @@ const Register = () => {
             <div className='w-full flex flex-col items-center'>
                 {link &&
                     <div className=" md:hidden flex flex-row border h-fit border-dashed hover:animate-pulse hover:text-green-200 hover:border-emerald-700 rounded-lg border-violet-300 w-fit text-white mt-16 p-3 text-md  ">
-                        <img src={wlogo} className="w-10" />
+                        <img src={wlogo} className="scale-75" />
                         <a href='https://chat.whatsapp.com/F6SBt0dasEiKv1BPUPMhI0' target="_blank" className="font-medium">Now join this Whatsapp Group</a>
 
 
@@ -213,7 +213,7 @@ const Register = () => {
                         // }}
                         className={`text-xl 
                     
-                      mt-6 mb-2 px-4 text-white  capitalize rounded-md shadow-md font-bold text-center w-full`}
+                      mt-6 mb-2 px-4 font-font1 text-white  capitalize rounded-md shadow-md font-bold text-center w-full`}
                     >
                         Instructions
                     </p>
