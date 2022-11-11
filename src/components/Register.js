@@ -1,5 +1,5 @@
 import { PopUpContext } from '../context/PopUpContext';
-import arrowhead from '../assets/images/arrowhead.png'
+import wlogo from '../assets/images/whatsapp.png'
 import qr from '../assets/images/qr.jpeg'
 import { form } from '../apis/form';
 import Features from '../components/Features'
@@ -28,7 +28,8 @@ const validationSchema = yup.object({
 });
 const Register = () => {
 
-    const [link, setLink] = useState(false)
+    const [link, setLink] = useState(false);
+    const [closed, setClosed] = useState(false);
 
     const { popUpState, popUpContentState } = useContext(PopUpContext);
     const [popUp, setPopUp] = popUpState;
@@ -46,6 +47,9 @@ const Register = () => {
         {
             desc: ` Participants are required to bring their own Laptops for the session.
             `
+        },
+        {
+            desc: `Confirmation mail will be sent .`
         },
         {
             desc: `More details will be provided later`
@@ -125,67 +129,73 @@ const Register = () => {
                         </div>
                     </div>
                 </div>
-                <div className='mt-10  flex flex-col items-center md:items-end w-full '>
-                    <div data-aos="fade-left" className='flex flex-col items-center justify-center  md:w-2/5   w-fit px-10   shadow-xl rounded-xl border-2 border-violet-300  md:mr-60 pb-10 py-5'>
-                        <h3 className='text-center  text-lg text-db-text-h mt-3 font-font1  md:text-xl'>Registration Form</h3>
-                        <Formik
-                            validationSchema={validationSchema}
-                            initialValues={{
-                                name: "",
-                                email: "",
-                                mobile_number: "",
-                                college_name: "",
-                                // transaction_id: "",
-                                // image: "",
-                            }}
-                            onSubmit={handleSubmit}
-                        >
-                            {({ values, setFieldValue, formProps }) => (
-                                <Form className='flex flex-col'>
-                                    <div className='flex flex-col mt-4 items-start'>
-                                        <label className=' mt-2 font-medium'>Name:</label>
-                                        <Field className=' outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="name" type="text" />
-                                        <KErrorMessage name="name" />
-                                    </div>
-                                    {/* <br /> <br /> */}
-                                    <div className='flex flex-col mt-4 items-start'>
-                                        <label className=' mt-2 font-medium'>Phone:</label>
-                                        <Field className='  outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="mobile_number" type="number" />
-                                        <KErrorMessage name="mobile_number" />
-                                    </div>
-                                    <div className='flex flex-col mt-4 items-start'>
-                                        <label className=' mt-2 font-medium'>Email:</label>
-                                        <Field className='  outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="email" type="email" />
-                                        <KErrorMessage name="email" />
-                                    </div>
-                                    <div className='flex flex-col mt-4 items-start'>
 
-                                        <label className=' mt-2 font-medium'>College Name:</label>
-                                        <Field className=' outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="college_name" type="text" />
-                                        <KErrorMessage name="college_name" />
-                                    </div>
-                                    {/* <div className='flex flex-col mt-4 items-start'>
+                <div className='mt-10  flex flex-col items-center md:items-end w-full '>
+                    {closed ?
+                        <div className='border-2 border-violet-300 md:mr-80 rounded-md md:mt-60 md:w-2/5 h-fit  w-fit px-10 font-font1'>Sorry , Registration Form Closed </div> :
+                        <div data-aos="fade-left" className='flex flex-col items-center justify-center  md:w-2/5   w-fit px-10   shadow-xl rounded-xl border-2 border-violet-300  md:mr-60 pb-10 py-5'>
+                            <h3 className='text-center  text-lg text-db-text-h mt-3 font-font1  md:text-xl'>Registration Form</h3>
+                            <Formik
+                                validationSchema={validationSchema}
+                                initialValues={{
+                                    name: "",
+                                    email: "",
+                                    mobile_number: "",
+                                    college_name: "",
+                                    // transaction_id: "",
+                                    // image: "",
+                                }}
+                                onSubmit={handleSubmit}
+                            >
+                                {({ values, setFieldValue, formProps }) => (
+                                    <Form className='flex flex-col'>
+                                        <div className='flex flex-col mt-4 items-start'>
+                                            <label className=' mt-2 font-medium'>Name:</label>
+                                            <Field className=' outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="name" type="text" />
+                                            <KErrorMessage name="name" />
+                                        </div>
+                                        {/* <br /> <br /> */}
+                                        <div className='flex flex-col mt-4 items-start'>
+                                            <label className=' mt-2 font-medium'>Phone:</label>
+                                            <Field className='  outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="mobile_number" type="number" />
+                                            <KErrorMessage name="mobile_number" />
+                                        </div>
+                                        <div className='flex flex-col mt-4 items-start'>
+                                            <label className=' mt-2 font-medium'>Email:</label>
+                                            <Field className='  outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="email" type="email" />
+                                            <KErrorMessage name="email" />
+                                        </div>
+                                        <div className='flex flex-col mt-4 items-start'>
+
+                                            <label className=' mt-2 font-medium'>College Name:</label>
+                                            <Field className=' outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="college_name" type="text" />
+                                            <KErrorMessage name="college_name" />
+                                        </div>
+                                        {/* <div className='flex flex-col mt-4 items-start'>
                                         <label className=' mt-2 font-medium'>Transaction ID:</label>
                                         <Field className=' outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="transaction_id" type="text" />
                                         <KErrorMessage name="transaction_id" />
                                     </div> */}
 
-                                    <div className='mt-7 flex flex-row '>
-                                        <button disabled={loading ? true : false} type="submit" className='text-black font-semibold hover:border-db-text-ph hover:text-white bg-violet-200 hover:bg-violet-700 rounded-md px-3 md:py-1 mr-5'>
-                                            Submit
-                                        </button>
-                                        <button type="reset" onClick={Formik.resetForm} className='  hover:border-gray-400   bg-gray-200  rounded-md px-3 md:py-1 text-black '>Reset</button>
-                                    </div>
-                                </Form>
-                            )}
-                        </Formik>
-                    </div>
+                                        <div className='mt-7 flex flex-row '>
+                                            <button disabled={loading ? true : false} type="submit" className='text-black font-semibold hover:border-db-text-ph hover:text-white bg-violet-200 hover:bg-violet-700 rounded-md px-3 md:py-1 mr-5'>
+                                                Submit
+                                            </button>
+                                            <button type="reset" onClick={Formik.resetForm} className='  hover:border-gray-400   bg-gray-200  rounded-md px-3 md:py-1 text-black '>Reset</button>
+                                        </div>
+                                    </Form>
+                                )}
+                            </Formik>
+                        </div>
+                    }
+
+
                 </div>
             </div>
             <div className='w-full flex flex-col items-center'>
                 {link &&
-                    <div className=" md:hidden border h-fit border-dashed hover:animate-pulse hover:text-green-200 hover:border-emerald-700 rounded-lg border-violet-300 w-fit text-white mt-16 p-3 text-md  ">
-
+                    <div className=" md:hidden flex flex-row border h-fit border-dashed hover:animate-pulse hover:text-green-200 hover:border-emerald-700 rounded-lg border-violet-300 w-fit text-white mt-16 p-3 text-md  ">
+                        <img src={wlogo} className="w-10" />
                         <a href='https://chat.whatsapp.com/F6SBt0dasEiKv1BPUPMhI0' target="_blank" className="font-medium">Now join this Whatsapp Group</a>
 
 
