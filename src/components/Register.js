@@ -2,6 +2,8 @@ import { PopUpContext } from '../context/PopUpContext';
 import arrowhead from '../assets/images/arrowhead.png'
 import qr from '../assets/images/qr.jpeg'
 import { form } from '../apis/form';
+import Features from '../components/Features'
+
 // import LocalLoader from './LocalLoader';
 
 // export default Register
@@ -36,15 +38,15 @@ const Register = () => {
     const inst = [
         
         {
+            desc: ` It will be a one-day long session.
+            `
+        },
+        {
             desc: ` Participants are required to bring their own Laptops for the session.
             `
         },
         {
-            desc: ` Refreshments will be provided.
-            `
-        },
-        {
-            desc: ` Extra payment need to be done for food, if needed.`
+            desc: `More details will be provided later`
         },
     ]
 
@@ -78,16 +80,23 @@ const Register = () => {
             <h1 className='ml-5 md:ml-20  text-4xl font-bold pt-24 text-center md:text-left font-font1'>Book Your Spot</h1>
             <h2 className='ml-5 md:ml-20  text-xl text-yellow-200 pt-2 text-center md:text-left italic'>Limited seats, hurry!</h2>
             
+            
             <div className='overflow-hidden w-full flex flex-col md:flex-row md:justify-between md:items-start '>
-
+                {/* <Features /> */}
+               
             
                 <div className='md:w-1/2 md:ml-36 '>
                     
                     <div className='flex flex-col items-center md:items-start md:pt-40'>
                         
-                        <div className='mt-10 w-full flex flex-col md:flex-row justify-center md:justify-between items-center '>
+                        <div className='mt-1 w-full flex flex-col md:flex-row justify-center md:justify-between items-center '>
                            
-                            
+                            <div className='text-left text-bold leading-6 rounded-xl border-2 border-violet-300 p-6 w-3/4/12'>
+                                
+                                <p className='font-bold text-2xl font-font1'>Get to learn from the best</p>
+                                <p className='font-bold text-2xl font-font1'>Chance to win exciting goodies</p>
+                                <p className='font-bold text-2xl font-font1'>Hands-on experience assured</p>
+                            </div>
 
                         </div>
                         <div className='flex flex-col items-center md:flex-row'>

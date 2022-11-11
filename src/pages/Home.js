@@ -15,7 +15,7 @@ const Home = () => {
                     <div id='comp_id'>
                     <About />
                     </div>
-                    <Features />
+                    {/* <Features /> */}
             </div>
             {/* <Features /> */}
 
