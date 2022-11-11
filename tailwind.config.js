@@ -16,7 +16,9 @@ module.exports = {
         'bottom': '#0a000f',
 
       },
-
+        fontFamily: {
+          font1: ['Audiowide','cursive']
+        }
     },
 
   },

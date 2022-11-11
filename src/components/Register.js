@@ -2,6 +2,8 @@ import { PopUpContext } from '../context/PopUpContext';
 import arrowhead from '../assets/images/arrowhead.png'
 import qr from '../assets/images/qr.jpeg'
 import { form } from '../apis/form';
+import Features from '../components/Features'
+
 // import LocalLoader from './LocalLoader';
 
 // export default Register
@@ -34,20 +36,17 @@ const Register = () => {
 
     const [cOpen, setCOpen] = useState(false);
     const inst = [
+        
         {
-            desc: `
-             A registration fee of Rs.150 required for attending the session.`
-        },
-        {
-            desc: ` Participants are required to bring their own Laptops for the session. ( Minimum 4GB __ required)
+            desc: ` It will be a one-day long  free session.
             `
         },
         {
-            desc: ` Refreshments will be provided.
+            desc: ` Participants are required to bring their own Laptops for the session.
             `
         },
         {
-            desc: ` Extra payment need to be done for food, if needed.`
+            desc: `More details will be provided later`
         },
     ]
 
@@ -63,7 +62,8 @@ const Register = () => {
 
         // setPopUpContent({ heading: "NOTICE", description: "The email has been sent!" });
         if (response.status === 200) {
-            setPopUpContent({ heading: "NOTICE", description: "Registration Successfull !" });
+            setPopUpContent({ heading: "NOTICE", description: "Registration Successfull ! " });
+            
 
         } else if (response.status === 409) {
             setPopUpContent({ heading: "NOTICE", description: "Registration with this Email already exists !!!" });
@@ -78,49 +78,36 @@ const Register = () => {
     return (
 
         <div id={"reg_id"} className='flex flex-col  bg-middle text-white'>
-            <h1 className='ml-5 md:ml-20 mb-5 text-4xl font-bold pt-24 text-center md:text-left'>Book Your Spot</h1>
+            <h1 className='ml-5 md:ml-20  text-4xl font-bold pt-24 text-center md:text-left font-font1'>Book Your Spot</h1>
+            <h2 className='ml-5 md:ml-20  text-xl text-yellow-200 pt-2 text-center md:text-left italic'>Limited seats, hurry!</h2>
+            
+            
             <div className='overflow-hidden w-full flex flex-col md:flex-row md:justify-between md:items-start '>
-
-
+                {/* <Features /> */}
+               
+            
                 <div className='md:w-1/2 md:ml-36 '>
+                    
                     <div className='flex flex-col items-center md:items-start md:pt-40'>
-                        <div className='mt-10 w-full flex flex-col md:flex-row justify-center md:justify-between items-center '>
-                            <div className='mt-10 w-full flex flex-col items-center  md:flex-row   '>
-                                {/* <div className=' w-52 h-52 bg-black '>
-
-                                </div> */}
-                                <img src={qr} className="w-52 h-52" />
-                                <div className='hidden md:block w-20 h-52 border-r-2  '>
-
-                                </div>
-                            </div>
-                            <div className='relative'>
-                                <div className='text-lg mt-5 md:mt-0 font-bold md:absolute -right-20    '>
-                                    <p>anandspidavoor@oksbi
-                                    </p>
-                                    <p>or</p>
-                                    <p>angathjr@okaxis
-                                    </p>
-                                </div>
+                        
+                        <div className='mt-1 w-full flex flex-col md:flex-row justify-center md:justify-between items-center '>
+                           
+                            <div className='text-left text-bold leading-6 rounded-xl border-2 border-violet-300 p-6 w-3/4/12'>
+                                
+                                <p className='font-bold text-2xl font-font1'>Get to learn from the best</p>
+                                <p className='font-bold text-2xl font-font1'>Chance to win exciting goodies</p>
+                                <p className='font-bold text-2xl font-font1'>Hands-on experience assured</p>
                             </div>
 
                         </div>
                         <div className='flex flex-col items-center md:flex-row'>
-                            <div className='md:text-3xl text-left mt-5 flex flex-col items-center justify-center'>
-                                <h1>Complete the Payment Using this QR Code or UPI ID </h1>
-                                {/* <h1>2. Complete the Payment</h1> */}
-                                <h1>And Fill the form below</h1>
-
-                            </div>
-                            <div className='opacity-0 md:opacity-100 w-fit h-fit ml-5 mt-1 overflow-hidden flex flex-row md:animate-pulse'>
-                                <img src={arrowhead} alt="" className='opacity-50  w-32 h-32    overflow-hidden   ' />
-                                <img src={arrowhead} alt="" className='-ml-10 opacity-50  w-32 h-32    overflow-hidden   ' />
-                            </div>
+                           
+                            
                         </div>
-                        <div className='text-left -mt-20 md:mt-20'>
+                        {/* <div className='text-left -mt-20 md:mt-20'>
                             * For Any Queries , contact :
                             <a href='#'>+91 9188532851</a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className='mt-10  flex flex-col items-center md:items-end w-full'>
@@ -133,8 +120,8 @@ const Register = () => {
                                 email: "",
                                 mobile_number: "",
                                 college_name: "",
-                                transaction_id: "",
-                                image: "",
+                                // transaction_id: "",
+                                // image: "",
                             }}
                             onSubmit={handleSubmit}
                         >
@@ -162,32 +149,12 @@ const Register = () => {
                                         <Field className=' bg-transparent outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="college_name" type="text" />
                                         <KErrorMessage name="college_name" />
                                     </div>
-                                    <div className='flex flex-col mt-4 items-start'>
+                                    {/* <div className='flex flex-col mt-4 items-start'>
                                         <label className=' mt-2 font-medium'>Transaction ID:</label>
                                         <Field className=' bg-transparent outline-none  rounded-md py-1 px-4 mt-2 w-full placeholder-slate-500 placeholder-opacity-50 text-violet-900 outline focus:outline-form-border  bg-violet-200 ' name="transaction_id" type="text" />
                                         <KErrorMessage name="transaction_id" />
-                                    </div>
-                                    <div className='flex flex-col mt-4 items-start'>
-
-
-
-
-                                        <h3 className='mt-3 font-medium'>Screenshot of the payment</h3>
-
-                                        {/* <form onSubmit={handleImgSubmit}>
-                                    <input type='file' name='file' onChange={handleFileChange}></input>
-                                    <button type='submit'>Add Screenshot</button>
-                                </form> */}
-                                        {/* <input type='file' name='file' onChange={handleFileChange}> */}
-
-                                        {/* </input> */}
-                                        {/* <button type='submit'>Add Screenshot</button> */}
-                                        <input id="image" name="image"
-                                            // value={values.image} 
-                                            type="file"
-                                            onChange={(event) => setFieldValue("image", event.currentTarget.files[0])} />
-                                        {/* <Field id="image" name="image" className='mt-2' type="file" /> */}
-                                    </div>
+                                    </div> */}
+                                    
                                     <div className='mt-7 flex flex-row '>
                                         <button disabled={loading ? true : false} type="submit" className='text-black font-semibold hover:border-db-text-ph hover:text-white bg-violet-200 hover:bg-violet-700 rounded-md px-3 md:py-1 mr-5'>
                                             Submit

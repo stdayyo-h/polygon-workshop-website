@@ -11,10 +11,13 @@ const Home = () => {
         <div className='overflow-hidden max-w-screen '>
             <Header id1={"comp_id"} id2={"reg_id"} />
 
-            <div id='comp_id'>
-                <About />
+            <div className='flex flex-col lg:flex-row'>
+                    <div id='comp_id'>
+                    <About />
+                    </div>
+                    {/* <Features /> */}
             </div>
-            <Features />
+            {/* <Features /> */}
 
             <Register />
             <Footer />
