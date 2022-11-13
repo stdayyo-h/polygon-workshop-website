@@ -130,7 +130,7 @@ const Register = () => {
 
                 <div className='mt-10  flex flex-col items-center md:items-end w-full '>
                     {closed ?
-                        <div className='border-2 border-violet-300 md:mr-80 rounded-md md:mt-60 md:w-2/5 h-fit  w-fit px-10 font-font1 text-xl'>Registration  Closed!!! Peoples who have submitted the form please check thier email for further procedure 💜  </div> :
+                        <div className='border-2 border-violet-300 md:mr-80 rounded-md md:mt-60 md:w-2/5 h-fit  w-fit px-10 font-font1 text-xl'>Registration  Closed !!! People who have submitted the form please check thier email for further procedure 💜  </div> :
                         <div data-aos="fade-left" className='flex flex-col items-center justify-center  md:w-2/5   w-fit px-10   shadow-xl rounded-xl border-2 border-violet-300  md:mr-60 pb-10 py-5'>
                             <h3 className='text-center  text-lg text-db-text-h mt-3 font-font1  md:text-xl'>Registration Form</h3>
                             <Formik
